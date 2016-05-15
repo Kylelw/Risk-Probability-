@@ -1,0 +1,18 @@
+{
+    "contents" : "N <- 23\ncoinflip <-data.f",
+    "created" : 1463105888764.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3237653217",
+    "id" : "4763AD7D",
+    "lastKnownWriteTime" : 8589869060,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

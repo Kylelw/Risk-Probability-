@@ -1,0 +1,18 @@
+{
+    "contents" : "\nN <- 2\nrisk <- data.frame(Simulation=1:N,\n                   Rounds=NA,\n                   An=NA,\n                   Dn=NA)\nfor (i in 1:N){\n\nAn <- 12 #Assume An >= 2\nDn <- 9 #Assume Dn >= 1\n\nk <- 0\nwhile (An > 1 & Dn > 0){\n\nif (An >= 4){\n  Ar <- sample(1:6, 3, TRUE)\n} else {\n  Ar <- sample(1:6, An-1, TRUE)\n}\n\nif (Dn >=2){\n  Dr <-sample(1:6, 2, TRUE)\n} else {\n  Dr <- sample(1:6, 1, TRUE)\n}\n\nLAr <-length(Ar)\nLDr <-length(Dr)\n\nLan <-min(LAr, LDr)\n\nAr <-sort(Ar, decreasing=TRUE)[1:Lan]\nDr <-sort(Dr, decreasing=TRUE)[1:Lan]\n\nALose <- Lan - sum(Ar > Dr)\nDLose <- Lan - ALose\n\nAn <-An - ALose\nDn <-Dn - DLose\n\nk <- k+1\ncat(\"Round \",k,\": An = \", An, \"\\t| Dn = \", Dn, \"\\n\")\n\n}\n\nrisk[i,2:4] <- cbind(k, An, Dn)\n\ncat(\"\\n\\n New Simulation:\\n\")\n\n#At last round, \n#if (An > 1){Succses}\n#if (An = 1){Failure}\n\n}\nrisk\n\n",
+    "created" : 1461712064209.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "584069047",
+    "id" : "31F9791D",
+    "lastKnownWriteTime" : 1463046900,
+    "path" : "~/Risk.app/Monte.Carlo.R",
+    "project_path" : "Monte.Carlo.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

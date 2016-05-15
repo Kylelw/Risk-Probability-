@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1463355760438.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DF4C44E9",
+    "lastKnownWriteTime" : 1152921504876740864,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "t2vaj57jla",
+        "caption" : "risk",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=risk&cache_key=t2vaj57jla",
+        "displayedObservations" : 2,
+        "environment" : "",
+        "object" : "risk",
+        "totalObservations" : 2,
+        "variables" : 4
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
